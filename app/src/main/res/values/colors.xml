@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="pallete1">#FFCDF5E1</color>
+    <color name="pallete2">#c3e9d7</color>
+    <color name="pallete3">#b8deca</color>
+    <color name="pallete4">#adcfbe</color>
+    <color name="pallete5">#aacebc</color>
+    <color name="pallete6">#a2c2b2</color>
+    <color name="pallete7">#9cbcac</color>
+    <color name="pallete8">#99b9a9</color>
+    <color name="pallete9">#95b4a5</color>
+    <color name="pallete10">#92b1a2</color>
+    <color name="pallete11">#8eac9e</color>
+    <color name="pallete12">#8aa799</color>
+    <color name="pallete13">#89a698</color>
+    <color name="pallete14">#86a395</color>
+    <color name="pallete15">#92b1a2</color>
+    <color name="pallete16">#8eac9d</color>
+    <color name="pallete17">#8aa799</color>
+    <color name="pallete18">#88a496</color>
+    <color name="pallete19">#87a395</color>
+    <color name="pallete20">#839e90</color>
+    <color name="pallete21">#809b8d</color>
+    <color name="pallete22">#7b9688</color>
+    <color name="pallete23">#789385</color>
+    <color name="pallete24">#70897c</color>
+    <color name="pallete25">#6a8175</color>
+    <color name="pallete26">#64796e</color>
+    <color name="pallete27">#62766b</color>
+    <color name="pallete28">#5e7166</color>
+    <color name="pallete29">#5a6c62</color>
+    <color name="pallete30">#55665d</color>
+    <color name="pallete31">#516159</color>
+    <color name="pallete32">#4d5c55</color>
+    <color name="pallete33">#46544e</color>
+    <color name="pallete34">#404d47</color>
+    <color name="pallete35">#3d4944</color>
+    <color name="pallete36">#38433e</color>
+    <color name="pallete37">#343e39</color>
+    <color name="pallete38">#2f3833</color>
+    <color name="pallete39">#29312d</color>
+    <color name="pallete40">#252d29</color>
+
+    <array name="Shades">
+        <item>@color/pallete1</item>
+        <item>@color/pallete2</item>
+        <item>@color/pallete3</item>
+        <item>@color/pallete4</item>
+        <item>@color/pallete5</item>
+        <item>@color/pallete6</item>
+        <item>@color/pallete7</item>
+        <item>@color/pallete8</item>
+        <item>@color/pallete9</item>
+        <item>@color/pallete10</item>
+        <item>@color/pallete11</item>
+        <item>@color/pallete12</item>
+        <item>@color/pallete13</item>
+        <item>@color/pallete14</item>
+        <item>@color/pallete15</item>
+        <item>@color/pallete16</item>
+        <item>@color/pallete17</item>
+        <item>@color/pallete18</item>
+        <item>@color/pallete19</item>
+        <item>@color/pallete20</item>
+        <item>@color/pallete21</item>
+        <item>@color/pallete22</item>
+        <item>@color/pallete23</item>
+        <item>@color/pallete24</item>
+        <item>@color/pallete25</item>
+        <item>@color/pallete26</item>
+        <item>@color/pallete27</item>
+        <item>@color/pallete28</item>
+        <item>@color/pallete29</item>
+        <item>@color/pallete30</item>
+        <item>@color/pallete31</item>
+        <item>@color/pallete32</item>
+        <item>@color/pallete33</item>
+        <item>@color/pallete34</item>
+        <item>@color/pallete35</item>
+        <item>@color/pallete36</item>
+        <item>@color/pallete37</item>
+        <item>@color/pallete38</item>
+        <item>@color/pallete39</item>
+        <item>@color/pallete40</item>
+
+
+    </array>
+</resources>
