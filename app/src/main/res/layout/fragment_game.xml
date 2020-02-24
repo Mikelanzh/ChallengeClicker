@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.example.sowl.challengeclicker.Activitys.MainActivity">
+    tools:context=".Fragments.GameFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/customActionBar"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="2.5"
+        android:layout_weight="2"
         android:background="@color/colorAccent"
         android:layoutDirection="rtl"
         android:orientation="horizontal">
@@ -21,13 +21,13 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:background="@color/colorTrasparent"
-            android:padding="20dp"
+            android:padding="15dp"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_award"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.17" />
+            app:layout_constraintWidth_percent="0.12" />
 
 
         <ImageButton
@@ -35,13 +35,13 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:background="@color/colorTrasparent"
-            android:padding="25dp"
+            android:padding="17dp"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_gear"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toLeftOf="@+id/topScores"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintWidth_percent="0.20" />
+            app:layout_constraintWidth_percent="0.12" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -55,7 +55,8 @@
             android:id="@+id/Scoretext"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAlignment="center" />
+            android:textAlignment="center"
+            android:textColor="@color/cardview_dark_background" />
 
 
     </LinearLayout>
@@ -100,6 +101,8 @@
 
         <TextView
             android:id="@+id/Timer_txt"
+
+            android:textColor="@color/cardview_dark_background"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAlignment="center" />

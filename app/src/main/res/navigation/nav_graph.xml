@@ -3,11 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainActivity">
-
-    <activity
-        android:id="@+id/mainActivity"
-        android:name="com.example.sowl.challengeclicker.Activitys.MainActivity"
+    app:startDestination="@id/gameFragment">
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="com.example.sowl.challengeclicker.Fragments.GameFragment"
         android:label="fragment_game"
-        tools:layout="@layout/fragment_game" />
+        tools:layout="@layout/fragment_game">
+        <action
+            android:id="@+id/action_gameFragment_to_scores"
+            app:destination="@+id/scores" />
+        <action
+            android:id="@+id/action_gameFragment2_to_setting2"
+            app:destination="@id/setting" />
+    </fragment>
+    <fragment
+        android:id="@+id/scores"
+        android:name="com.example.sowl.challengeclicker.Fragments.Scores"
+        android:label="fragment_scores"
+        tools:layout="@layout/fragment_scores" />
+    <fragment
+        android:id="@+id/setting"
+        android:name="com.example.sowl.challengeclicker.Fragments.Setting"
+        android:label="fragment_setting"
+        tools:layout="@layout/fragment_setting" />
 </navigation>
