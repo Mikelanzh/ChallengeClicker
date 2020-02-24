@@ -44,6 +44,8 @@
     <color name="pallete38">#2f3833</color>
     <color name="pallete39">#29312d</color>
     <color name="pallete40">#252d29</color>
+    <color name="white">#FFFFFF</color>
+    <color name="whiteTranse">#56FFFFFF</color>
 
     <array name="Shades">
         <item>@color/pallete1</item>
