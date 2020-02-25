@@ -86,8 +86,7 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/EnteringNameED"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Sowl" />
+                android:layout_height="match_parent" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton

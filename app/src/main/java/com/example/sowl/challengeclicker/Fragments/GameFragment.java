@@ -8,11 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.sowl.challengeclicker.R;
 
@@ -30,13 +33,11 @@ public class GameFragment extends Fragment {
     TextView txt_score, txt_finalscore;
     TextView txt_timer;
     boolean game_finish = false;
-
     // params
     int counter = 0;
     int[] rainbow;
     int colorA = 0, colorB = 0, colorC = 0;
     int A, B, C;
-
     CountDownTimer colortimer = new CountDownTimer(30000, 35) {
 
 
@@ -105,6 +106,9 @@ public class GameFragment extends Fragment {
         }
 
     };
+    private ImageButton mBtnSetting;
+    private ImageButton mTopScores;
+    private NavController navController;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -124,6 +128,7 @@ public class GameFragment extends Fragment {
 
     private void init(View view) {
 
+        navController = NavHostFragment.findNavController(this);
         txt_score = view.findViewById(R.id.Scoretext);
         txt_timer = view.findViewById(R.id.Timer_txt);
         txt_finalscore = view.findViewById(R.id.Final_score_txt);
@@ -133,6 +138,8 @@ public class GameFragment extends Fragment {
 //        mButton.setOnClickListener(this);
 //        mResetbutton.setOnClickListener(this);
         mRelativeLayout = view.findViewById(R.id.RelativeLayout_container);
+        mBtnSetting = view.findViewById(R.id.setting);
+        mTopScores = view.findViewById(R.id.topScores);
     }
 
     private void initListener() {
@@ -143,6 +150,14 @@ public class GameFragment extends Fragment {
 
         mResetbutton.setOnClickListener(view -> {
             addRndButton();
+        });
+
+        mBtnSetting.setOnClickListener(view -> {
+            navController.navigate(R.id.action_gameFragment2_to_setting2);
+        });
+
+        mTopScores.setOnClickListener(view -> {
+            navController.navigate(R.id.action_gameFragment_to_scores);
         });
     }
 
