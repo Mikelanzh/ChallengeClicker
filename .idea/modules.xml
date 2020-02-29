@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Android-ChallengeClicker.iml" filepath="$PROJECT_DIR$/Android-ChallengeClicker.iml" group="ChallengeClicker" />
       <module fileurl="file://$PROJECT_DIR$/ChallengeClicker.iml" filepath="$PROJECT_DIR$/ChallengeClicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/ChallengeClicker-app.iml" filepath="$PROJECT_DIR$/app/ChallengeClicker-app.iml" group="ChallengeClicker/app" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
