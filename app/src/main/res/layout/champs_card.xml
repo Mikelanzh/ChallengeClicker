@@ -8,6 +8,7 @@
     android:layout_marginLeft="@dimen/mtrl_card_spacing"
     android:layout_marginTop="@dimen/mtrl_card_spacing"
     android:layout_marginRight="@dimen/mtrl_card_spacing"
+    android:layoutDirection="ltr"
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent"
@@ -66,11 +67,12 @@
             android:id="@+id/Place_Cup"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:padding="10dp"
+            android:padding="13dp"
             android:scaleType="centerCrop"
             android:src="@drawable/ic_award"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
+            android:visibility="gone"
             app:layout_constraintTop_toTopOf="parent" />
 
 

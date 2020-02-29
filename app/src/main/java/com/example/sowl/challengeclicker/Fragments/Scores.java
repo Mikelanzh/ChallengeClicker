@@ -12,9 +12,12 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
 import androidx.navigation.fragment.NavHostFragment;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.sowl.challengeclicker.Adapters.ScoresAdapter;
 import com.example.sowl.challengeclicker.R;
+import com.example.sowl.challengeclicker.Utilities.Test;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -24,6 +27,7 @@ public class Scores extends Fragment {
     private RecyclerView mRecycler;
     private NavController navController;
     private ImageButton mBtnBack;
+    private ScoresAdapter mAdapter;
 
 
     public Scores() {
@@ -52,11 +56,18 @@ public class Scores extends Fragment {
         navController = NavHostFragment.findNavController(this);
         mRecycler = view.findViewById(R.id.champs_card_recycler);
 
+        mAdapter = new ScoresAdapter();
+        mAdapter.submitList(Test.createFakeData());
+
+        mRecycler.setLayoutManager(new LinearLayoutManager(getContext()));
+        mRecycler.setHasFixedSize(true);
+        mRecycler.setAdapter(mAdapter);
+
     }
 
     private void initListener() {
         mBtnBack.setOnClickListener(view -> {
-            navController.navigate(R.id.gameFragment);
+            getActivity().onBackPressed();
         });
     }
 
